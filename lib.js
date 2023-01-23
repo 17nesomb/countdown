@@ -17,3 +17,8 @@ function reset() {
     timer.value = "00:00:00";
     clearInterval()
 }
+
+elements.timer.onchange = function (e) {
+    var timerRGEX = (\d{ 2}):(\d{ 2 }): (\d{ 2 })
+    var validInput = timer.RGEX.test(elements.timer.value);
+}
